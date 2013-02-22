@@ -5,7 +5,8 @@
 #app
 
 Role: 
-= Role.first.nil? ? "No roles" : Role.first.name
+- Test.create('blah')
+= Test.reload.first.nil? ? "No db" : Test.reload.first.name
 
 :javascript
   $(function() {
